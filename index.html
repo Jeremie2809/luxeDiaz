@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxeDiaz | Propriétés de Luxe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Luxe<span>Diaz</span></h1>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#accueil" class="active">Accueil</a></li>
+                <li><a href="#proprietes">Nos Propriétés</a></li>
+                <li><a href="#a-propos">À Propos</a></li>
+                <li><a href="#agents">Nos Agents</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero" id="accueil">
+            <div class="hero-content">
+                <h1>Découvrez l'Excellence Immobilière</h1>
+                <p>Des propriétés d'exception qui augmentent votre valeur perçue</p>
+                <div class="cta-buttons">
+                    <a href="#proprietes" class="btn btn-primary">Explorer les Propriétés</a>
+                    <a href="#contact" class="btn btn-secondary">Nous Contacter</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="search-section">
+        <div class="container">
+            <div class="search-container">
+                <h2>Trouvez votre Propriété</h2>
+                <form class="search-form">
+                    <div class="form-group">
+                        <label for="location">Localisation</label>
+                        <select id="location">
+                            <option value="">Toutes les localisations</option>
+                            <option value="paris">Brazzaville</option>
+                            <option value="nice">Pointe-noire</option>
+                            <option value="cannes">Oyo</option>
+                            <option value="monaco">Ouesso</option>
+                        </select>
+                    </div> 
+                    <div class="form-group">
+                        <label for="property-type">Type de Propriété</label>
+                        <select id="property-type">
+                            <option value="">Tous les types</option>
+                            <option value="mansion">Residence</option>
+                            <option value="mansion">Manoir</option>
+                            <option value="villa">Villa</option>
+                            <option value="estate">Domaine</option>
+                        </select>
+                    </div>
+                    <div class="form-group"> 
+                        <label for="budget">Budget Max</label>
+                        <select id="budget">
+                            <option value="">Sans limite</option>
+                            <option value="1m">50M FCFA - 100M FCFA</option>
+                            <option value="3m">100M FCFA - 200M FCFA</option>
+                            <option value="5m">200M FCFA - 500M FCFA</option>
+                            <option value="10m">500M+</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Rechercher</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-properties" id="proprietes">
+        <div class="container">
+            <div class="section-header">
+                <h2>Propriétés d'Exception</h2>
+                <p>Découvrez notre sélection de propriétés les plus prestigieuses</p>
+            </div>
+            <div class="properties-grid">
+                <div class="property-card">
+                    <div class="property-image">
+                        <span class="property-tag">En Vedette</span>
+                        <img src="maison manoir.jpg" alt="Villa avec piscine à débordement">
+                    </div>
+                    <div class="property-details">
+                        <h3>Villa prestige</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Kintélé, Brazzaville</p>
+                        <p class="property-description">Superbe villa avec une piscine à débordement et jardin luxuriant.</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 6 chambres</span>
+                            <span><i class="fas fa-bath"></i> 5 salles de bain</span>
+                            <span><i class="fas fa-ruler-combined"></i> 650 m²</span>
+                        </div>
+                        <div class="property-footer">
+                            <span class="property-price">150 000 000 FCFA</span>
+                            <a href="#" class="btn btn-secondary btn-sm">Voir les détails</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="Maison 3.jpg" alt="Penthouse avec espace">
+                    </div>
+                    <div class="property-details">
+                        <h3>Maison calibrée</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Oms, Brazzaville</p>
+                        <p class="property-description">Maison d'exception avec espace en pelouse à profiter pleinement de la nature.</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 4 chambres</span>
+                            <span><i class="fas fa-bath"></i> 3 salles de bain</span>
+                            <span><i class="fas fa-ruler-combined"></i> 320 m²</span>
+                        </div>
+                        <div class="property-footer">
+                            <span class="property-price">100 750 000 FCFA</span>
+                            <a href="#" class="btn btn-secondary btn-sm">Voir les détails</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="Maison 4.jpg" alt="Domaine viticole de luxe">
+                    </div>
+                    <div class="property-details">
+                        <h3>Domaine Royal</h3>
+                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Quartier residentiel, Oyo</p>
+                        <p class="property-description">Magnifique domaine comprenant château et installations modernisées.</p>
+                        <div class="property-features">
+                            <span><i class="fas fa-bed"></i> 8 chambres</span>
+                            <span><i class="fas fa-bath"></i> 6 salles de bain</span>
+                            <span><i class="fas fa-ruler-combined"></i> 8 hectares</span>
+                        </div>
+                        <div class="property-footer">
+                            <span class="property-price">490 900 000 FCFA</span>
+                            <a href="#" class="btn btn-secondary btn-sm">Voir les détails</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="#" class="btn btn-primary">Voir toutes nos propriétés</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section" id="a-propos">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="section-header">
+                        <h2>À Propos de LuxeDiaz</h2>
+                    </div>
+                    <p>Fondée sur l'excellence et la passion pour l'immobilier, LuxeDiaz s'est établie comme la référence incontournable dans le domaine des propriétés de luxe.</p>
+                    <p>Notre expertise et notre réseau exclusif nous permettent de vous offrir l'accès aux propriétés les plus prestigieuses et discrètes du Congo.</p>
+                    <p>Chez LuxeDiaz, nous comprenons que l'acquisition d'une propriété de luxe est bien plus qu'une simple transaction immobilière - c'est l'aboutissement d'une vision personnelle et l'expression d'un art de vivre unique.</p>
+                    <div class="company-stats">
+                        <div class="stat">
+                            <span class="stat-number">8+</span>
+                            <span class="stat-text">Années d'expérience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100+</span>
+                            <span class="stat-text">Propriétés vendues</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">98%</span>
+                            <span class="stat-text">Clients satisfaits</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="bureau LuxeDiaz.png" alt="Notre équipe LuxeDiaz">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ce Que Disent Nos Clients</h2>
+                <p>Des témoignages qui reflètent notre engagement envers l'excellence</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"L'équipe de LuxeDiaz a su parfaitement comprendre les attentes de ma famille et nous a guidés vers la propriété de nos rêves. Un service d'exception."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Jean-Philippe Laurent</h4>
+                            <p>Propriétaire à Pointe-noire</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"La discrétion et l'expertise de LuxeDiaz nous ont permis d'acquérir une propriété incroyable que nous n'aurions jamais trouvée sur le marché traditionnel."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Sophie Mavounga</h4>
+                            <p>Propriétaire à Brazzaville</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="agents-section" id="agents">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nos Agents Immobiliers d'Élite</h2>
+                <p>Des experts passionnés dédiés à l'excellence immobilière</p>
+            </div>
+            <div class="agents-grid">
+                <div class="agent-card">
+                    <div class="agent-image">
+                        <img src="RE.jpg" alt="Agent immobilier">
+                    </div>
+                    <div class="agent-details">
+                        <h3>Jéremie Matondo</h3>
+                        <p class="agent-title">Directeur des Ventes</p>
+                        <p class="agent-description">Plus de 10 ans d'expérience dans l'immobilier.</p>
+                        <div class="agent-contact">
+                            <a href="jeremiemvouezolo77@gmail.com"><i class="fas fa-envelope"></i></a>
+                            <a href="tel:+242 06522 11 97"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="agent-card">
+                    <div class="agent-image">
+                        <img src="femme.jpg" alt="Agent immobilier">
+                    </div>
+                    <div class="agent-details">
+                        <h3>Isabelle Meridien</h3>
+                        <p class="agent-title">Spécialiste en Design interieur et architecture</p>
+                        <p class="agent-description">Connaissance approfondie de l'amenagement de l'espace et les préferences clientèles</p>
+                        <div class="agent-contact">
+                            <a href="mailto:isabelle@luxediaz.com"><i class="fas fa-envelope"></i></a>
+                            <a href="tel:+242 05554 45 53"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="agent-card">
+                    <div class="agent-image">
+                        <img src="homme (2).jpg" alt="Agent immobilier">
+                    </div>
+                    <div class="agent-details">
+                        <h3>Julien Demonte</h3>
+                        <p class="agent-title">Expert en construction et architecture</p>
+                        <p class="agent-description">Spécialiste des propriétés et conformités aux normes techniques .</p>
+                        <div class="agent-contact">
+                            <a href="mailto:julien@luxediaz.com"><i class="fas fa-envelope"></i></a>
+                            <a href="tel:+242 06932 80 49"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="section-header">
+                        <h2>Contactez-Nous</h2>
+                        <p>Commencez votre parcours vers votre propriété de rêve</p>
+                    </div>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Adresse</h4>
+                                <p>03 bis rue Bondza, Avenue Mayama, Poto-poto, Brazzaville, Congo</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Téléphone</h4>
+                                <p>+242 06 417 17 34</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p> immobilier@luxediaz.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nom Complet</label>
+                            <input type="text" id="name" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Votre email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" placeholder="Votre téléphone">
+                        </div>
+                        <div class="form-group">
+                            <label for="interest">Intéressé par</label>
+                            <select id="interest">
+                                <option value="">Sélectionnez une option</option>
+                                <option value="buy">Acheter une propriété</option>
+                                <option value="sell">Vendre une propriété</option>
+                                <option value="invest">Investissement immobilier</option>
+                                <option value="consult">Consultation</option>
+                            </select>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="message">Message</label>
+                            <textarea id="message" placeholder="Votre message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary full-width">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Luxe<span>Diaz</span></h2>
+                    <p>Excellence Immobilière</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Navigation</h3>
+                        <ul>
+                            <li><a href="#accueil">Accueil</a></li>
+                            <li><a href="#proprietes">Propriétés</a></li>
+                            <li><a href="#a-propos">À Propos</a></li>
+                            <li><a href="#agents">Agents</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Propriétés</h3>
+                        <ul>
+                            <li><a href="#">Villas & Manoirs</a></li>
+                            <li><a href="#">Appartements de Luxe</a></li>
+                            <li><a href="#">Propriétés en Bord de Mer</a></li>
+                            <li><a href="#">Domaines & Châteaux</a></li>
+                            <li><a href="#">Investissements Immobiliers</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Légal</h3>
+                        <ul>
+                            <li><a href="#">Mentions Légales</a></li>
+                            <li><a href="#">Politique de Confidentialité</a></li>
+                            <li><a href="#">Conditions Générales</a></li>
+                            <li><a href="#">Cookies</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LuxeDiaz - Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple JavaScript for mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            mobileMenu.addEventListener('click', function() {
+                mobileMenu.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
